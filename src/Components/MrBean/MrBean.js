@@ -7,7 +7,7 @@ const MrBean = () => {
             <div className="max-w-sm mx-auto p-8 bg-white rounded-xl shadow-md space-y-3 sm:flex sm:items-center
             sm:py-4 sm:space-y-0
             sm:space-x-6">
-                <img className="sm:mx-0 h-24  max-auto rounded-full ring-4 ring-green-300 sm:flex-shrink-0" src={img} alt="/" />
+                <img className="  transform hover:scale-110 duration-500 sm:mx-0 h-24  max-auto rounded-full ring-4 ring-gray-300 sm:flex-shrink-0" src={img} alt="/" />
                 <div className="space-y-4 text-center sm:text-left">
                     <div className="space-y-0.5">
                         <p className="text-lg text-black font-semibold" >I am learning Code</p>
@@ -17,11 +17,19 @@ const MrBean = () => {
                     border
                     border-purple-200 
                     rounded-full text-sm
-                    text-purple-500 font-semibold">Visit now</button>
+                    text-purple-500 font-semibold
+                    hover:text-white
+                    hover:bg-purple-600
+                    hover:border-transparent 
+                    focus:outline-none 
+                    hover:ring-4
+                    hover:ring-purple-600
+                    ring-offset-2
+                    ">Visit now</button>
                 </div>
             </div>
         </div>
     );
 };
 
-export default MrBean;
+export default MrBean;  
